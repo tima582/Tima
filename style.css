@@ -1,0 +1,119 @@
+{
+margin: 0; /*Зовніштій*/
+padding: 0; /*Внутрішний відступ*/
+box-sizing: border-box; /*Властивість box-sizing дозволяє задавати розмір блоку.*/
+}
+body{
+font-family: "inter", sans-serif; /*Шрифт*/
+background-color: indigo; /*колір фону*/
+color:coral; /*колір тексту*/ 
+}
+/*головна строрінка*/
+a{
+    color: coral;
+    text-decoration: none; /*прибирає нижнє підкреслення*/
+}
+.btn-send-me{
+    display: inline-block;
+    background-color: gold;
+    width: 200px;
+    height: 45px;
+    text-align: center;7
+    944
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius:8px;
+    margin-top: 45px;
+    padding-top: 10px;
+}
+.main-photo{
+    width: 15rem;
+    height: auto;
+}
+
+.hero-conetent{
+    margin: 80px 150px;
+}
+
+.hero-avatar{
+
+}
+/*Контакти*/
+
+.bg-video{
+    witdth: 100vw;
+    height: 87.3vh;
+    object-fit: cover;
+}
+
+/*форма*/
+
+input{
+    width: 28rem;
+    height: 2.2rem;
+    background-color: coral;
+    border: none;
+    border-radius: 8px;
+}
+textarea{
+    width: 28rem;
+    height: 7.2rem;
+    background-color: coral;
+    border: none;
+    border-radius: 8px;
+}
+button{
+    width: 8rem;
+    height: 2rem;
+    margin-left: 150px;
+}
+.fedback-form{
+    width: 100%;
+    max-width: 550px;
+    height: 450;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    border-radius: 25px;
+    margin:auto;
+    padding: 40px 50px;
+}
+/*про мене*/
+
+.about-me-photo{
+    width: 13rem;
+    height: auto;
+}
+
+info{
+
+}
+
+/*Галерея*/
+.my-gallery{
+    width: 15%;
+    height: auto;
+    margin: 40px;
+}
+
+h1{
+    color: darkcyan;
+}
+
+.highlight{
+    color: aqua;
+}
+/*навики*/
+
+.skills{
+width: 400px;
+height: auto;
+background-color: darkcyan;
+border-radius: 10px;
+margin: auto;
+padding: 25px;
+line-height: 45px;
+}
+progress{
+    width: 100%;
+    height: 8px;
+}
