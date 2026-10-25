@@ -1,64 +1,127 @@
-{
+*{
 margin: 0; /*Зовніштій*/
 padding: 0; /*Внутрішний відступ*/
 box-sizing: border-box; /*Властивість box-sizing дозволяє задавати розмір блоку.*/
 }
 body{
 font-family: "inter", sans-serif; /*Шрифт*/
-background-color: indigo; /*колір фону*/
-color:coral; /*колір тексту*/ 
+background-color: rgb(68, 29, 96); /*колір фону*/
+color:gold; /*колір тексту*/ 
 }
 /*головна строрінка*/
+header{
+    width: 100%;
+    position: sticky;
+    top:0;
+    background-color: black;
+    z-index: 100; 
+}
 a{
-    color: coral;
+    color:gold;
     text-decoration: none; /*прибирає нижнє підкреслення*/
+}
+li{
+    display: inline-block;
+    padding: 25px;
+    margin-left: 40px;    
+}
+li:hover{
+    text-decoration: underline;
+    color: gold;
 }
 .btn-send-me{
     display: inline-block;
     background-color: gold;
+    color: black;
     width: 200px;
     height: 45px;
-    text-align: center;7
-    944
+    text-align: center;
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid rgb(46, 47, 44);
     border-radius:8px;
     margin-top: 45px;
     padding-top: 10px;
+    box-shadow: 10px 10px rgb(218, 167, 13); 
 }
-.main-photo{
-    width: 15rem;
-    height: auto;
+.btn-send-me:active{
+    transform: scale(0.95);
 }
 
-.hero-conetent{
+img {
+    mix-blend-mode: multiply;
+}
+
+.hero-content{
     margin: 80px 150px;
+    text-shadow: 2px 2px goldenrod;
 }
 
 .hero-avatar{
-
+ position: relative;
+ width: 40%;
+ top: -250px;
+ left: 60%;
+}
+.circle{
+    width: 325px;
+    height: 325px;
+    background: gold;
+    border-radius: 55% 45% 40% 60% / 60% 50% 50% 40%;
+     position: absolute;
+}
+.circle:hover{background-color: gold;}
+.main-photo{
+    width: 16rem;
+    height: auto;
+    position: absolute;
+    left: 40px;
+    bottom: -270px;
+}
+.circle:hover{
+    background: gold;
+    transform: translatey(50px) 6s;
+    filter: blur(5px);
 }
 /*Контакти*/
 
 .bg-video{
-    witdth: 100vw;
+    width: 100vw;
     height: 87.3vh;
     object-fit: cover;
+    z-index: -1;/*Відео від контентом*/
 }
-
+.contact-info{
+    position: absolute;
+    top: 250px;
+    left: 45%;
+    z-index: 2;
+}
+div {
+    box-shadow: 10px 10px 5px rgb(42, 41, 41);
+}
+.video-container::after {
+    content: ;
+    position: absolute;
+    top: 69px;
+    left: 0;
+    width: 100vw;
+    height: 87.3vh;
+    background: black;/* 40% прозорості */
+    z-index: 1;
+}
 /*форма*/
 
 input{
     width: 28rem;
     height: 2.2rem;
-    background-color: coral;
+    background-color:gold(255, 68, 0);
     border: none;
     border-radius: 8px;
 }
 textarea{
     width: 28rem;
     height: 7.2rem;
-    background-color: coral;
+    background-color:gold(255, 68, 0);
     border: none;
     border-radius: 8px;
 }
@@ -67,53 +130,194 @@ button{
     height: 2rem;
     margin-left: 150px;
 }
-.fedback-form{
+.feedback-form{
     width: 100%;
     max-width: 550px;
-    height: 450;
+    height: 450px;
     box-sizing: border-box;
-    background-color: blueviolet;
-    border-radius: 25px;
-    margin:auto;
+  background: #3d3d3d;
+background: linear-gradient(90deg, rgba(61, 61, 61, 1) 30%, rgba(255, 229, 0, 1) 91%);
+    margin: 60px auto;
     padding: 40px 50px;
+   text-shadow: 1px 1px rgb(255, 179, 0); 
+   box-shadow: 10px 10px rgb(255, 179, 0); 
 }
 /*про мене*/
+
+.about-me{
+    display: flex;
+    flex-direction:row;
+    position: relative;
+}   
 
 .about-me-photo{
     width: 13rem;
     height: auto;
+    position: absolute;
+    left: 5%;
+    top:50px
+}
+.about-me-photo:hover{
+    transform: scale(0.95);
 }
 
-info{
-
+.title-about-me{
+    text-align: center;
+    color: gold;
+    margin-top: 40px;
 }
 
+.info{
+    width: 35%;
+    position: relative;
+    left: 25%;
+    top: 25px;
+    left: 50%;
+}
+.arrow{
+    position: absolute;
+    left: 15%;
+    top: -15px;
+}
+.inscription{
+    position: absolute;
+    left: 25%;
+
+.inscription:hover{
+    color: gold;
+}
+
+}
+.about-me{
+    display: flex;
+    flex-direction: row;
+}
+.change-lang{
+   display: inline;
+   max-width: 100px;
+   position: relative;
+   top: -50px;
+   left: 75%;
+   z-index: 5;
+
+}
+.btn-UA, .btn-EN{
+    display: inline;
+    position: ansolute;
+    width: 90px;
+    height: 30px;
+}
+.btn-EN{
+    left:100px;
+}
 /*Галерея*/
+.title-gallery{
+text-align: center;
+}
 .my-gallery{
     width: 15%;
     height: auto;
     margin: 40px;
 }
-
-h1{
-    color: darkcyan;
-}
-
-.highlight{
-    color: aqua;
-}
 /*навики*/
 
 .skills{
-width: 400px;
+display: flex;
+flex-direction: column;
+width: 300px;
 height: auto;
-background-color: darkcyan;
+background: #575450;
+background: linear-gradient(90deg, rgba(87, 84, 80, 1) 0%, rgba(255, 204, 0, 1) 62%);
 border-radius: 10px;
 margin: auto;
 padding: 25px;
-line-height: 45px;
+line-height: 45px
 }
+.cards{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;    
+}
+.percent{
+    position: relative;
+    top: -45px;
+    left: 400px;
+}
+progress{
+    position: relative;
+    top: -60px;
+    height: 15px;
+}
+.title-skills{
+    text-align: center;
+    margin: 60px;
+}
+/*Підвал*/
+footer{
+    position: fixed; /*Фіксований*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+}
+.inscription:hover{
+    color: gold;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
 progress{
     width: 100%;
     height: 8px;
+}
+.gallery img:hover{
+    transform: rotateY(180deg);
+}
+h1{
+    color: gold(0, 139, 28);
+}
+
+.highlight{
+    color: gold(0, 255, 68);
+}
+.imput:focus {
+    border: 2px; solid blue;
+    outline: none;
+    background-color: gold;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background: azure;
+    color: aliceblue;
+    padding: 15px 2opx;
+    border-radius: 50%;
+    font-weight: bold;
+}
+html {
+    scroll-behavior: smooth;
+}
+/**/
+@media screen and(max-width: 480px){
+    .hero-avatar{
+        display: none;
+    }
+    .hero-content{
+        margin-left: 80% ;
+    }
+}
+
+@media screen and (max-width: 768){
+    .hero-content{
+        margin-left: 50px;
+    }
+    .hero-avatar{
+        margin-left: -90px
+    }
 }
